@@ -1,0 +1,46 @@
+body, head, title, link, h1, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  font-family: sans-serif;
+  background: transparent;
+  text-align: inherit;
+
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+li {
+  /*display: none;*/
+}
+
+.tower {
+  float: left;
+  width: 75px;
+  border-bottom: 5px solid black;
+}
+
+.disc1 {
+  display: block;
+}
+
+.disc2 {
+  display: block;
+}
+
+.disc3 {
+  display: block;
+
+}

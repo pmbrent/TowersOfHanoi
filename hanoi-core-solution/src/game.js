@@ -63,4 +63,4 @@ Game.prototype.run = function (reader, gameCompletionCallback) {
   }).bind(this));
 };
 
-module.exports = Game;
+// module.exports = Game;

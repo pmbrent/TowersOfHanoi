@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+// !/usr/bin/env node
 
 var readline = require('readline');
 var Hanoi = require("../src");
