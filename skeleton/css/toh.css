@@ -11,6 +11,17 @@ body, head, title, link, h1, ul, li {
   list-style: none;
 }
 
+.hanoi-game {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+ul {
+  position: relative;
+  margin: 0 30px;
+}
+
 .group:after {
   content: "";
   display: block;
@@ -23,24 +34,32 @@ h1 {
 }
 
 li {
-  /*display: none;*/
+  background: white;
+  margin: 5px;
+  height: 20px;
 }
 
 .tower {
   float: left;
-  width: 75px;
+  width: 100px;
+  height: 100px;
   border-bottom: 5px solid black;
 }
 
 .disc1 {
   display: block;
+  width: 50px;
+  background: grey;
 }
 
 .disc2 {
   display: block;
+  width: 60px;
+  background: grey;
 }
 
 .disc3 {
   display: block;
-
+  width: 70px;
+  background: grey;
 }
