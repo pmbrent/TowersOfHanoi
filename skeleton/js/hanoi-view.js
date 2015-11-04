@@ -19,13 +19,18 @@ Hanoi.View.prototype.bindEvents = function() {
 }
 
 Hanoi.View.prototype.clickTower = function(tower) {
-  // debugger;
   if (this.sourceTower == undefined) {
    this.sourceTower = tower
+   tower.addClass("clicked");
  } else {
-   if (this.game.move(this.sourceTower.data("num"), tower.data("num"))) {
-     this.sourceTower = undefined;
+   if (!this.game.move(this.sourceTower.data("num"), tower.data("num"))) {
+     alert("Not a valid move!");
    }
+     this.sourceTower.removeClass("clicked");
+     this.sourceTower = undefined;
+     if (this.game.isWon()) {
+       $("strong").addClass("victory");
+     }
  }
  this.render();
 }
